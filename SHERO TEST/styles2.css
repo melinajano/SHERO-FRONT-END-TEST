@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    font-family: "Josefin Sans", sans-serif;
+    background-color: #ffffff;
+  }
+  footer {
+    background-color: white;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 30px;
+    text-align: left;
+    border-top: 1px solid #ddd;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  footer h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  footer p, footer a {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 19px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin: 3px 0;
+    color: #000000;
+    text-decoration: none;
+    text-align: justify;
+  }
+  footer a:hover {
+    text-decoration: underline;
+  }
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .newsletter input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .newsletter button {
+    padding: 10px 20px;
+    background-color: black;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  .newsletter button:hover {
+    background-color: #333;
+  }
+  .footer-logo p {
+    font-weight: bold;
+    margin: 0 0 10px;
+    margin-top: 20px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 19px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000000;
+    text-decoration: none;
+    text-align: justify;
+  }
+  .footer-logo small {
+    font-size: 12px;
+    color: #777;
+  }
+  
+  /* Responsive Design */
+@media (max-width: 1024px) {
+  footer {
+      grid-template-columns: 1fr 1fr; /* Adjust layout for tablets */
+  }
+
+  footer div {
+      align-items: flex-start;
+  }
+
+  .newsletter input[type="email"], .newsletter button {
+      width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+      grid-template-columns: 1fr; /* Stack footer sections vertically */
+      text-align: center;
+  }
+
+  footer div {
+      align-items: center;
+  }
+
+  .newsletter input[type="email"], .newsletter button {
+      width: 100%; /* Full width for inputs and buttons */
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+      grid-template-columns: 1fr; /* Maintain stacked layout for small devices */
+      padding: 20px;
+  }
+
+  footer div {
+      align-items: center;
+  }
+
+  footer h4 {
+      font-size: 14px;
+  }
+
+  footer p, footer a {
+      font-size: 10px;
+  }
+
+  .newsletter input[type="email"], .newsletter button {
+      width: 100%; /* Ensure inputs and buttons fill container */
+  }
+}
